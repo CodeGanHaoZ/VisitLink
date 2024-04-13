@@ -6,12 +6,7 @@ const rule = new schedule.RecurrenceRule();
 rule.second = 0;
 
 const job = schedule.scheduleJob(rule, function () {
-  // axios.get('https://blog.csdn.net/weixin_53231455/article/details/134409590')
-  // axios.get('https://blog.csdn.net/weixin_53231455/article/details/134609626')
-  // axios.get('https://blog.csdn.net/weixin_53231455/article/details/131743861')
-  // axios.get('https://blog.csdn.net/weixin_53231455/article/details/137151344')
-  // axios.get('https://blog.csdn.net/weixin_53231455/article/details/137098583')
-  axios.get('https://ghw0927.blog.csdn.net/article/details/137540458')
+  axios.get('your bolg link')
     .then(response => {
       console.log(`开始访问-------------------------------->`)
       console.log(`status code: ${response.status}，访问成功`)
